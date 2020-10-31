@@ -1,0 +1,40 @@
+@import 'styles/base/variables';
+@import 'styles/base/functions';
+@import 'styles/base/mixins';
+
+.home {
+    &__hero {
+        text-align: center;
+        h1 {
+            font-size: font-size(hero);
+            line-height: line-height(hero);
+        }
+    }
+
+    &__search {
+        width: 700px;
+        margin: 0 auto;
+        form {
+            display: flex;
+        }
+        input {
+            width: 55%;
+            margin-right: 5%;
+            padding: 1em;
+            background: rgba($black, 0.1);
+            border: none;
+            @include placeholder {
+                color: rgba($black, 0.3);
+            }
+        }
+        
+        [type=submit] {
+            width: 40%;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    &__top-services {
+        margin: offset(6)*2 0;
+    }
+}

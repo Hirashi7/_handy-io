@@ -1,0 +1,11 @@
+@import 'styles/base/variables';
+@import 'styles/base/functions';
+
+.footer {
+    margin-top: offset(4);
+    &__content {
+        padding: offset(4);
+        color: rgba($black, 0.3);
+        text-align: center;
+    }
+}

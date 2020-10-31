@@ -1,11 +1,11 @@
 import React from 'react';
-import './About.scss';
+import './Contact.scss';
 
 export default class Services extends React.Component {
     render(){
         return (
-            <main className="container about">
-                <h1>About us</h1>
+            <main className="container contact">
+                <h1>Contact</h1>
             </main>
         );
     }
